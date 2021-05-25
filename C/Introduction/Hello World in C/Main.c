@@ -6,11 +6,11 @@
 int main() 
 {
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+   	/* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
 	//take a character, a string and a sentence as input
 	char s[100];
-    scanf("%[^\n]%*c", &s);
+    	scanf("%[^\n]%*c", &s);
 	printf("Hello, World!\n");
-    printf("%s", s);
-    return 0;
+    	printf("%s", s);
+    	return 0;
 }
