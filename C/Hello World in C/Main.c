@@ -5,11 +5,17 @@
 
 int main() 
 {
-	
-    char s[100];
-    scanf("%[^\n]%*c", &s); 	
+
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
-    printf("Hello, World!\n");
-    printf("%s", s);  
+	//take a character, a string and a sentence as input
+    char ch;
+    char s[100];
+    char sen[100];
+    scanf("%c", &ch);
+    scanf("\n");
+    scanf("%[^\n]%*c", &s);
+    scanf("%[^\n]%*c", &sen);
+    //print the character, the string, and the sentence as output
+    printf("%c\n%s\n%s\n", ch, s, sen);
     return 0;
 }
