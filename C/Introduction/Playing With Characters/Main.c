@@ -7,7 +7,7 @@ int main()
 {
 
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
-	//take a character, a string and a sentence as input
+    //take a character, a string and a sentence as input
     char ch;
     char s[100];
     char sen[100];
