@@ -14,14 +14,15 @@ import java.util.*;
 
 //Write your code here
 class Add {
-    public static void add(int... parameters) {
+    public void add(int... parameters) {
         StringBuffer strBuffer = new StringBuffer();
         int sum = 0;
         for (Integer number : parameters) {
-            strBuffer.append(number + "+");
+            strBuffer.append(number).append("+");
             sum += number;
         }
-        strBuffer.setCharAt(strBuffer.length()-1, '=');
+        strBuffer.setCharAt(strBuffer.length()-1,
+                '=');
         strBuffer.append(sum);
         System.out.println(strBuffer);
     }
