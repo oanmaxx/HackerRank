@@ -4,7 +4,7 @@ public class Solution {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        //convert string to lowercase
+        //two Strings of different length cannot be anagram of each other
         if (a.length() != b.length()) {
             return false;
         }
