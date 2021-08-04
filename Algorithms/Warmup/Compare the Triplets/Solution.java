@@ -29,17 +29,17 @@ class Result {
 
     public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
         // Write your code here
-        Integer[] comparisonPoints = new Integer[2];
-        for (Integer indexA : a) {
-            for (Integer indexB : b) {
-                if (indexA>indexB) {
-                    comparisonPoints[0]++;
-                } else {
-                    comparisonPoints[1]++;
-                }
+        int pointsA=0, pointsB=0;
+        for (int i=0; i<a.size(); i++) {
+            if (a.get(i) > b.get(i)) {
+                pointsA++;
+            } else if(a.get(i) < b.get(i)) {
+                pointsB++;
             }
         }
-        return Arrays.asList(comparisonPoints);
+        
+        //comparison points as a list
+        return Arrays.asList(pointsA, pointsB);
     }
 }
 
