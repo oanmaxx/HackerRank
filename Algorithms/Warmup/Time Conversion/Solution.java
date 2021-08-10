@@ -19,7 +19,6 @@ class Result {
 
     public static String timeConversion(String s) {
         // Write your code here
-        //SOLUTION 1
         //parse the first 2 digits to a number
         //if the number is 12, set it to 0(by using modulo 12)
         int hour = Integer.parseInt(s.substring(0, 2)) % 12;
@@ -29,14 +28,6 @@ class Result {
         }
         //rebuild string: replace first 2 digits with new number and remove AM/PM
         return String.format("%02d", hour) + s.substring(2,8);
-        //SOLUTION 2
-
-//        String[] timeArr = s.split(":");
-//        String hour = timeArr[0];
-//        String minutes = timeArr[1];
-//        String seconds = timeArr[2].substring(0,2);
-//        String caser = timeArr[2].substring(2,4);
-
     }
 }
 
