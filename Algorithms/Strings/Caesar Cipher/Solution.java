@@ -20,7 +20,7 @@ class Result {
 
     public static String caesarCipher(String s, int k) {
         // Write your code here
-        StringBuffer encryptedString = new StringBuffer("");
+        StringBuilder encryptedString = new StringBuilder();
 
         // Update the ASCII values by k and cast to char.
         // If it is a symbol, don't change it.
@@ -33,7 +33,7 @@ class Result {
                 encryptedString.append((char) (97 + ((s.charAt(i)+k-97)%26)));
                 // symbol, e.g. dash
             } else {
-                encryptedString.append((char) (s.charAt(i)));
+                encryptedString.append((s.charAt(i)));
             }
         }
         return encryptedString.toString();
