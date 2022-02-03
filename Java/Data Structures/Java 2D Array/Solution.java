@@ -5,7 +5,7 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         int[][] arr = new int[6][6];
         int maxSum = Integer.MIN_VALUE;
-        int sum;
+        int sum = 0;
 
         for(int i=0; i < 6; i++) {
             for(int j=0; j < 6; j++) {
@@ -22,7 +22,6 @@ public class Solution {
                 }
             }
         }
-
         System.out.println(maxSum);
     }
 }
